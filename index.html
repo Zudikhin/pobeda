@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header_block">
+          <a class="header_block_logo" href="#">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_block_other">
+            <ul>
+              <li>
+                <span data-target="gifts">Подарки</span>
+              </li>
+              <li>
+                <span data-target="rules">Правила</span>
+              </li>
+              <li>
+                <span data-target="registration">Регистрация кода</span>
+              </li>
+              <li>
+                <span data-target="faq">Вопрос-ответ</span>
+              </li>
+            </ul>
+            <div class="header_block_other_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container">
+        <div class="main_block"></div>
+      </div>
+    </section>
+
+    <section class="broad">
+      <div class="container">
+        <h2>Смотреть запись онлайн <br> трансляции розыгрыша!</h2>
+        <div class="broad_block">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/HDy_TgaSRBQ?si=V1b2M396u3MJST9p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <a href="#" target="_blank">
+          <img src="img/broad/icon_doc.svg" alt="">
+          <span>Список победителей</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- <div class="separate" style="background: url(img/form/line.png); background-size: cover; background-position: 50%;"></div> -->
+
+    <section class="win">
+      <div class="container">
+        <h2>Как выиграть?</h2>
+        <div class="win_block">
+          <div class="win_block_item">
+            <img class="win_block_item_img" src="img/win/1.png" alt="">
+            <div class="win_block_item_text">
+              <h3>Совершайте покупки</h3>
+              <p>от 700 рублей с 27 февраля по 27 марта 2023 г. и получайте купоны</p>
+            </div>
+          </div>
+          <div class="win_block_item">
+            <img class="win_block_item_img" src="img/win/2.png" alt="">
+            <div class="win_block_item_text">
+              <h3>Регистрируйте код</h3>
+              <p>с купона до 27 марта 2023 г. включительно</p>
+            </div>
+          </div>
+          <div class="win_block_item">
+            <img class="win_block_item_img" src="img/win/3.png" alt="">
+            <div class="win_block_item_text">
+              <h3>Ждите итоги розыгрыша</h3>
+              <p>29 марта 2023 г. в прямом эфире в 17:00 по Московскому времени в социальных сетях и на канале YouTube</p>
+              <div class="win_block_item_social">
+                <a href="#">
+                  <img class="default" src="img/win/yt.svg" alt="">
+                  <img class="hover" src="img/win/yt_hover.svg" alt="">
+                </a>
+                <a href="#">
+                  <img class="default" src="img/win/vk.svg" alt="">
+                  <img class="hover" src="img/win/vk_hover.svg" alt="">
+                </a>
+                <a href="#">
+                  <img class="default" src="img/win/ok.svg" alt="">
+                  <img class="hover" src="img/win/ok_hover.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <p class="win_text">Результаты розыгрыша появятся здесь 31 марта 2023 г.</p>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="container">
+        <div class="form_block">
+          <h2>Зарегистрируй код для участия в розыгрыше!</h2>
+          <div class="form_block_form">
+            <div class="form_block_form_item">
+              <input type="text" placeholder="ФИО*">
+              <span class="required">Обязательное поле</span>
+            </div>
+            <div class="form_block_form_item">
+              <input type="tel" placeholder="Телефон*">
+              <span class="required">Обязательное поле</span>
+            </div>
+            <div class="form_block_form_item">
+              <input type="email" placeholder="E-mail*">
+              <span class="required">Обязательное поле</span>
+              <p class="form_block_form_item_email">Если нет E-mail, <a href="#">жми сюда</a></p>
+            </div>
+            <div class="form_block_form_item">
+              <input id="city" type="text" placeholder="Где проживаете (населенный пункт)*">
+              <span class="required">Обязательное поле</span>
+            </div>
+            <div class="form_block_form_item">
+              <div class="warning">
+                <img src="img/form/icon_help.svg" alt="">
+              </div>
+              <input id="address" type="text" placeholder="Адрес магазина, где получен купон*">
+              <div class="form_block_form_item_block">
+                <ul>
+                  <li>Ахтубинск, ул. Волгоградская, 178 открытие 1.09</li>
+                  <li>Белгород, ул. Костюкова, 39</li>
+                  <li>Белгород, ул. Шаландина, 4б</li>
+                  <li>Бехтеевка, ул. Дорошенко, 36</li>
+                  <li>Валуйки, ул. Максима Горького, 82б</li>
+                  <li>Старый Оскол, бульвар Дружбы, 8а</li>
+                  <li>Старый Оскол, мкр. Молодогвардеец, 17</li>
+                  <li>Старый Оскол, ул. Титова, 19</li>
+                  <li>Быково, ул. Куйбышева, 7 открытие 13.09</li>
+                  <li>Волгоград, ул. Пролетарская, 18</li>
+                  <li>Волгоград, ул. Землячки, 58А</li>
+                  <li>Волгоград, ул. Череповецкая, 1/1</li>
+                  <li>Волгоград, ул. Николая Отрады, 1</li>
+                  <li>Волгоград, ул. Столетова, 4А</li>
+                  <li>Волгоград, ул. Титова, 11</li>
+                  <li>Волгоград, ул. Краснополянская, 26А</li>
+                  <li>Волгоград, ул. Рабоче-Крестьянская, 48</li>
+                  <li>Волжский, ул. Александрова, 10Г</li>
+                  <li>Волжский, ул. Карбышева, 47А/4</li>
+                  <li>Волжский, пр-т им. Ленина, 128А</li>
+                  <li>Волжский, ул. Мира, 37А</li>
+                  <li>Волжский, ул. Петровская, 86а</li>
+                  <li>Волжский, ул. Пионерская, 24</li>
+                  <li>Волжский, пр-т Дружбы, 74а</li>
+                  <li>Волжский, ул. Ленина, 71</li>
+                  <li>Волжский, ул. Мира, 95</li>
+                  <li>Волжский, ул. Александрова, 15А</li>
+                  <li>Горьковский, ул. Волгоградская, 166Б</li>
+                  <li>Жирновск, ул. Советская, 15</li>
+                  <li>Калач-на-Дону, ул. Кирова, 194Б</li>
+                  <li>Камышин, ул. Пролетарская, 18</li>
+                  <li>Краснослободск, ул. Ленина, 176/7</li>
+                  <li>Котельниково, ул. Родина, 20</li>
+                  <li>Котово, ул. Победы, 23</li>
+                  <li>Михайловка, ул. Республиканская, 95</li>
+                  <li>Новоаннинский, ул. Ленина, 67</li>
+                  <li>Палласовка, ул. Ленина, 37</li>
+                  <li>Светлый Яр, ул. Сидорова, 46А открытие 15.09</li>
+                </ul>
+              </div>
+              <span class="required">Обязательное поле</span>
+            </div>
+            <div class="form_block_form_item">
+              <div class="warning">
+                <img src="img/form/icon_help.svg" alt="">
+              </div>
+              <input id="coupon" type="text" placeholder="Код с купона (21 символ)*">
+              <span class="required">Обязательное поле</span>
+              <p class="form_block_form_item_count">Количество оставшихся символов: <span id="count">21</span></p>
+            </div>
+          </div>
+          <p class="form_block_warning">Внимание! <br>
+            Не забудьте сохранить оригинал купона. Подарки победителям Акции выдаются только при наличии оригинала купона</p>
+          <div class="form_block_bottom">
+            <button id="send">Принять участие</button>
+            <p>Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a> и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="separate" style="background: url(img/form/line.png); background-size: cover; background-position: 50%;"></div>
+
+    <section class="faq">
+      <div class="container">
+        <div class="faq_block">
+          <h2>Вопросы и ответы</h2>
+          <div class="faq_block_list">
+
+            <div class="faq_block_list_item">
+              <div class="faq_block_list_item_top">
+                <div class="faq_block_list_item_top_left">
+                  <span>01</span>
+                  <h4>Кто является организатором акции?</h4>
+                </div>
+                <div class="faq_block_list_item_top_arrow">
+                  <img src="img/faq/arrow.svg" alt="">
+                </div>
+              </div>
+              <div class="faq_block_list_item_body">
+                <p>Организатором акции является ООО «ТК Лето»</p>
+              </div>
+            </div>
+
+            <div class="faq_block_list_item">
+              <div class="faq_block_list_item_top">
+                <div class="faq_block_list_item_top_left">
+                  <span>02</span>
+                  <h4>Какие товары принимают участие в акции?</h4>
+                </div>
+                <div class="faq_block_list_item_top_arrow">
+                  <img src="img/faq/arrow.svg" alt="">
+                </div>
+              </div>
+              <div class="faq_block_list_item_body">
+                <p>В акции принимает участие весь ассортимент товаров. К участию в Акции не допускаются чеки, содержащие среди списка приобретенных товаров на сумму от 900 рублей в одном чеке: табак, табачные изделия, табачную продукцию, алкогольную продукцию.</p>
+              </div>
+            </div>
+
+            <div class="faq_block_list_item">
+              <div class="faq_block_list_item_top">
+                <div class="faq_block_list_item_top_left">
+                  <span>03</span>
+                  <h4>Какие товары принимают участие в акции?</h4>
+                </div>
+                <div class="faq_block_list_item_top_arrow">
+                  <img src="img/faq/arrow.svg" alt="">
+                </div>
+              </div>
+              <div class="faq_block_list_item_body">
+                <p>Акция проводится во всех магазинах торговой сети ПОБЕДА ООО «ТК Лето», расположенных на территории Российской Федерации. Адреса всех магазинов ПОБЕДА смотрите <a href="https://xn--80aaadiigoj9aqmm.xn--p1ai/%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B/" rel="noopener noreferrer" target="_blank">здесь</a></p>
+              </div>
+            </div>
+
+            <div class="faq_block_list_item">
+              <div class="faq_block_list_item_top">
+                <div class="faq_block_list_item_top_left">
+                  <span>04</span>
+                  <h4>Какие сроки проведения акции?</h4>
+                </div>
+                <div class="faq_block_list_item_top_arrow">
+                  <img src="img/faq/arrow.svg" alt="">
+                </div>
+              </div>
+              <div class="faq_block_list_item_body">
+                <p>Общий период проведения Акции – с 1 июля 2023 года по 31 августа 2023 года включительно.</p>
+                <p>Периоды выдачи Купонов Акции «Приходи, покупай, выигрывай!» – с 1 июля 2023 года по 31 июля 2023 года включительно.</p>
+                <p>Период выдачи гарантированных подарков от Партнера Акции «Приходи, покупай, выигрывай!» – с 1 июля 2023 года по 31 июля 2023 года включительно.</p>
+                <p>Общий период реализации гарантированных подарков от Партнера Акции «Приходи, покупай, выигрывай!» – с 1 июля 2023 года по 6 августа 2023 года.</p>
+                <p>Период регистрации Уникальных кодов Участника Акции – с 1 июля 2023 года по 31 июля 2023 года включительно. Купоны Акции «Приходи, покупай, выигрывай!» выдаются только в магазинах ПОБЕДА в рабочее время магазинов.</p>
+                <p>Розыгрыш Подарков Акции среди участников, зарегистрировавших Уникальный код Участника Акции на Сайте Акции победаподарки.рф проводится 2 августа 2023 года в 18:00 по МСК.</p>
+                <p>Период вручения подарков – 15 августа 2023 года по 31 августа 2023 года включительно.</p>
+              </div>
+            </div>
+
+            <div class="faq_block_list_item">
+              <div class="faq_block_list_item_top">
+                <div class="faq_block_list_item_top_left">
+                  <span>05</span>
+                  <h4>Что необходимо сделать для участия в акции?</h4>
+                </div>
+                <div class="faq_block_list_item_top_arrow">
+                  <img src="img/faq/arrow.svg" alt="">
+                </div>
+              </div>
+              <div class="faq_block_list_item_body">
+                <ul>
+                  <li>Единовременно приобрести любое количество товара в одном чеке на сумму от 700 рублей в торговой сети «Победа» в период с 16 сентября по 13 октября 2022 года включительно.</li>
+                  <li>Сохранить чек, подтверждающий покупку.</li>
+                  <li>Зарегистрировать на сайте <a href="#">магазинпобедапромо.рф</a> код с купона.</li>
+                  <li>Сохранить купон до конца акции.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="faq_block_list_item">
+              <div class="faq_block_list_item_top">
+                <div class="faq_block_list_item_top_left">
+                  <span>06</span>
+                  <h4>Сколько чеков может зарегистрировать один участника?</h4>
+                </div>
+                <div class="faq_block_list_item_top_arrow">
+                  <img src="img/faq/arrow.svg" alt="">
+                </div>
+              </div>
+              <div class="faq_block_list_item_body">
+                <p>Один и тот же участник Акции может зарегистрировать не более 20 чеков в течение срока Акции.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_block">
+          <a href="tel:88003331631">8 800 333 16 31</a>
+          <p class="footer_block_tel">Телефон горячей линии (круглосуточно)</p>
+          <p class="footer_block_bot">Все права защищены © 2023 Магазин ПОБЕДА</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js" integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </body>
+</html>
+
+
+
